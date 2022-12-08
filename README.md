@@ -1,4 +1,4 @@
-# Repositório API!
+# Repositório API! :rocket:
 
 # Sumário
 
