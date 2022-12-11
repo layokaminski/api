@@ -4,8 +4,6 @@
   "description": "API com finalidade de estudo e desenvolvimento pratico",
   "main": "src/server.js",
   "scripts": {
-    "prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate",
-    "drop": "npx sequelize-cli db:drop",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "nodemon -L ."
@@ -28,8 +26,6 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "4.17",
-    "joi": "^17.7.0",
-    "jsonwebtoken": "8.5",
     "mysql2": "2.3",
     "sequelize": "6.3"
   }
