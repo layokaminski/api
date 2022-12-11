@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "- [O que deverá ser desenvolvido](API com finalidade de estudo e desenvolvimento pratico)\r   - [ANTES DE COMEÇAR A DESENVOLVER](#antes-de-começar-a-desenvolver)\r - [Guia de tarefas](#guia-de-tarefas)\r   - [Lista de Requisitos](#lista-de-requisitos)\r     - [1 - Sua aplicação deve ter o endpoint POST `/user`](#1---sua-aplicação-deve-ter-o-endpoint-post-user)",
+  "description": "API com finalidade de estudo e desenvolvimento pratico.",
   "main": "src/server.js",
   "scripts": {
     "start": "node .",
