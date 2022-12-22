@@ -4,6 +4,8 @@
   "description": "- [O que deverá ser desenvolvido](API com finalidade de estudo e desenvolvimento pratico)\r   - [ANTES DE COMEÇAR A DESENVOLVER](#antes-de-começar-a-desenvolver)\r - [Guia de tarefas](#guia-de-tarefas)\r   - [Lista de Requisitos](#lista-de-requisitos)\r     - [1 - Sua aplicação deve ter o endpoint POST `/user`](#1---sua-aplicação-deve-ter-o-endpoint-post-user)",
   "main": "src/server.js",
   "scripts": {
+    "prestart": "npx sequelize-cli db:create && npx sequelize-cli db:migrate",
+    "drop": "npx sequelize-cli db:drop",
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "debug": "nodemon -L ."
@@ -21,11 +23,20 @@
   "homepage": "https://github.com/layokaminski/api#readme",
   "devDependencies": {
     "nodemon": "^2.0.20",
-    "sequelize-cli": "6.2"
+    "sequelize-cli": "6.2",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "15.0.0",
+    "eslint-plugin-editorconfig": "3.2.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-mocha": "9.0.0",
+    "eslint-plugin-sonarjs": "0.10.0"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "4.17",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "8.5",
     "mysql2": "2.3",
     "sequelize": "6.3"
   }

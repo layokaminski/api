@@ -2,8 +2,10 @@ const express = require('express');
 
 const app = express();
 
+const userRoute = require('./routes/userRoutes');
+
 app.use(express.json());
 
-app.get('/', (_req, res) => res.status(200).json({ message: 'Hello Word' }));
+app.use('/signup', userRoute);
 
 module.exports = app;
