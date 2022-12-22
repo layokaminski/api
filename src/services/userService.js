@@ -17,14 +17,14 @@ const findByEmail = async (email) => {
   return findEmail;
 }
 
-const findByNickName = async (nickname) => {
-  const findByNickName = await RepositoryUsers.findByNickName(nickname);
+const findBynickname = async (nickname) => {
+  const findBynickname = await RepositoryUsers.findBynickname(nickname);
 
-  return findByNickName;
+  return findBynickname;
 }
 
 module.exports = {
   create,
   findByEmail,
-  findByNickName,
+  findBynickname,
 };

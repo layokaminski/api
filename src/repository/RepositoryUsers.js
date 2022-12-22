@@ -6,7 +6,7 @@ const findByEmail = async (email) => {
   return findEmail;
 };
 
-const findByNickName = async (nickname) => {
+const findBynickname = async (nickname) => {
   const findNickName = await User.findOne({ where: { nickname } });
 
   return findNickName;
@@ -21,5 +21,5 @@ const createUser = async ({ nickname, email, password }) => {
 module.exports = {
   createUser,
   findByEmail,
-  findByNickName,
+  findBynickname,
 };
