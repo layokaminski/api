@@ -7,7 +7,7 @@ const isValidExistUser = async (req, res, next) => {
   const isValidNickName = await userService.findByNickName(nickname);
 
   if (isValidEmail || isValidNickName) {
-    return res.status(409).json({ message:  'Usuario já existe!'})
+    return res.status(409).json({ message: 'Usuario já existe!' });
   }
 
   return next();

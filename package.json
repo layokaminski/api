@@ -23,7 +23,14 @@
   "homepage": "https://github.com/layokaminski/api#readme",
   "devDependencies": {
     "nodemon": "^2.0.20",
-    "sequelize-cli": "6.2"
+    "sequelize-cli": "6.2",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "15.0.0",
+    "eslint-plugin-editorconfig": "3.2.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-mocha": "9.0.0",
+    "eslint-plugin-sonarjs": "0.10.0"
   },
   "dependencies": {
     "dotenv": "^16.0.3",

@@ -2,7 +2,7 @@ const RepositoryUsers = require('../repository/RepositoryUsers');
 const { createToken } = require('../auth/jwtConfig');
 
 const create = async ({ nickname, email, password }) => {
-  const user = await RepositoryUsers.createUser({ nickname,email,password});
+  const user = await RepositoryUsers.createUser({ nickname, email, password });
 
   const { password: _pass, ...userWithoutPassword } = user.dataValues;
 
@@ -21,7 +21,7 @@ const findByNickName = async (nickname) => {
   const findByNickName = await RepositoryUsers.findByNickName(nickname);
 
   return findByNickName;
-} 
+}
 
 module.exports = {
   create,

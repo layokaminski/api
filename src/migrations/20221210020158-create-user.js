@@ -8,7 +8,7 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true
-      }, 
+      },
       nickname: {
         type: Sequelize.STRING,
         allowNull: false,

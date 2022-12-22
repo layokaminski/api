@@ -4,11 +4,11 @@ const UserModel = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     password: DataTypes.STRING,
   },
-  {
-    tableName: 'users',
-    timestamps: false,
-    underscored: true,
-  });
+    {
+      tableName: 'users',
+      timestamps: false,
+      underscored: true,
+    });
 
   return User;
 };
